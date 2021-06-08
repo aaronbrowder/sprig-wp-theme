@@ -1,0 +1,39 @@
+@import '_core.scss';
+
+.page {
+   margin: auto;
+   margin-top: 30px;
+   margin-bottom: 20px;
+   max-width: 700px;
+   ul {
+      padding-left: 25px;
+   }
+   li {
+      margin-bottom: 5px;
+   }
+}
+
+.page-title, .post-title {
+   text-align: center;
+   padding-top: 15px;
+}
+
+.page-title {
+   padding-bottom: 35px;
+   border-bottom: 1px solid #ddd;
+}
+
+@media (min-width: 800px) {
+   .page {
+      margin-bottom: 40px;
+   }
+}
+
+@media (min-width: 992px) {
+   .page-title, .post-title {
+      margin-top: 30px;
+   }
+   .page {
+      margin-bottom: 60px;
+   }
+}

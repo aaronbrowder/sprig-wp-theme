@@ -1,0 +1,27 @@
+$header-font-family: 'Open Sans Condensed', Candara, sans-serif;
+
+@mixin button {
+   color: #fff;
+   border: none;
+   outline: none;
+   font-family: $header-font-family;
+   text-transform: uppercase;
+   cursor: pointer;
+   text-align: center;
+   border-radius: 3px;
+   font-size: 18px;
+   padding: 7px;
+   width: 140px;
+   &:hover,
+   &:focus {
+      color: #fff;
+   }
+}
+
+@mixin clear-after {
+   &:after {
+      clear: both;
+      display: table;
+      content: ' ';
+   }
+}

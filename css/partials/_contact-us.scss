@@ -1,0 +1,73 @@
+@import '_core.scss';
+.contact-us-table {
+   border-spacing: 10px;
+   margin-left: -10px;
+   width: 100%;
+   font-size: 13px;
+   th {
+      text-align: left;
+      background: #e9e9e9;
+      padding: 6px 12px;
+      width: 1px;
+      white-space: nowrap;
+   }
+   input[type=text],
+   input[type=email] {
+      width: 100%;
+      max-width: 360px;
+      @media (min-width: 400px) {
+         &.contact-us-short {
+            max-width: 150px;
+         }
+      }
+   }
+   textarea {
+      width: 100%;
+   }
+   input,
+   textarea,
+   select {
+      padding: 8px;
+      font-size: inherit;
+      font-family: inherit;
+   }
+   select {
+      background: #fff;
+   }
+}
+
+.contact-us-compact-label {
+   font-size: .85em;
+}
+
+.contact-us-state-select {
+   width: 100%;
+   max-width: 380px;
+}
+
+.contact-us-send {
+   @include button;
+}
+
+.contact-us-success,
+.contact-us-error {
+   padding: 7px 10px;
+}
+
+.contact-us-success {
+   background: #DCF7D7;
+   border-bottom: 1px solid #8bad84;
+   color: #005b00;
+}
+
+.contact-us-error {
+   background: #ffd2d1;
+   border-bottom: 1px solid #e88989;
+   color: #780000;
+}
+
+@media (min-width: 800px) {
+   .contact-us-table {
+      font-size: 14.5px;
+   }
+}

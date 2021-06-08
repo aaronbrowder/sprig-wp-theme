@@ -1,0 +1,87 @@
+@import '_core.scss';
+.footer {
+   background: #333;
+   color: #aaa;
+   padding: 50px 15px;
+   min-height: 160px;
+}
+
+.footer-contact {
+   h1,
+   h2,
+   h3,
+   h4,
+   h5 {
+      color: #ccc;
+      text-transform: uppercase;
+   }
+   a {
+      color: #ccc;
+      &:hover,
+      &:focus {
+         color: #8FEA8A;
+      }
+   }
+}
+
+.footer-social {
+   margin-right: 10px;
+   margin-bottom: 40px;
+   .social-link {
+      color: #ddd;
+      font-size: 32px;
+      display: inline-block;
+      margin: 0 7px;
+      &:hover,
+      &:focus {
+         color: #8FEA8A;
+         text-decoration: none;
+      }
+   }
+}
+
+.footer-links {
+   text-align: left;
+   margin-top: 30px;
+
+   & a {
+      color: #ccc;
+
+      &:hover {
+         color: #8FEA8A;
+      }
+   }
+}
+
+@media (min-width: 550px) {
+   .footer-social {
+      float: right;
+      text-align: right;
+   }
+   .footer-links {
+      text-align: right;
+   }
+   .footer-contact {
+      overflow: hidden;
+      h1,
+      h2,
+      h3,
+      h4 {
+         margin-top: 10px;
+      }
+   }
+}
+
+@media (min-width: 800px) {
+   .footer {
+      padding-top: 80px;
+      padding-bottom: 45px;
+   }
+}
+
+@media (min-width: 992px) {
+   .footer {
+      padding-left: 0;
+      padding-right: 0;
+   }
+}

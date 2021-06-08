@@ -1,0 +1,125 @@
+@import '_core.scss';
+
+body {
+   font-family: 'Open Sans', Helvetica, sans-serif;
+   font-size: 14px;
+   color: #444;
+   margin: 0;
+   overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+   margin-top: 20px;
+   margin-bottom: 10px;
+   font-family: $header-font-family;
+   font-weight: bold;
+   color: #333;
+   line-height: 1.1;
+}
+
+h1 {
+   font-size: 30px;
+}
+
+h2 {
+   font-size: 25px;
+}
+
+h3 {
+   font-size: 21px;
+}
+
+h4 {
+   font-size: 18px;
+}
+
+a {
+   text-decoration: none;
+   font-weight: bold;
+   color: #009102;
+   &:hover {
+      color: #000;
+      text-decoration: none;
+   }
+}
+
+blockquote {
+   background: #ebebeb;
+   border-bottom: 1px solid #bbb;
+   margin: 6px 0;
+   padding: 12px 16px;
+   p:first-child {
+      margin-top: 0;
+   }
+   p:last-child {
+      margin-bottom: 0;
+   }
+}
+
+iframe {
+   max-width: 100%;
+}
+
+.text-light {
+   color: #888;
+}
+
+.text-light-green {
+   color: #288529;
+}
+
+.button {
+   @include button;
+}
+
+.blue-button {
+   @include button;
+   background: #008dcc;
+   &:hover, &:focus {
+      background: #007db8;
+   }
+}
+
+.green-button {
+   @include button;
+   background: #00aa13;
+   &:hover, &:focus {
+      background: #009712;
+   }
+}
+
+.container {
+   @include clear-after;
+   margin: auto;
+   padding: 0 10px;
+}
+
+@media (min-width: 800px) {
+   body {
+      font-size: 15px;
+   }
+   h1 {
+      font-size: 36px;
+   }
+   h2 {
+      font-size: 30px;
+   }
+   h3 {
+      font-size: 24px;
+   }
+   h4 {
+      font-size: 18px;
+   }
+   .container {
+      padding: 0 15px;
+   }
+}
+
+@media (min-width: 992px) {
+   .container {
+      max-width: 1000px;
+   }
+}

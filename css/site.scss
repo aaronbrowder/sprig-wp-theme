@@ -1,0 +1,13 @@
+/*
+How to compile this into css:
+1. Open a command prompt
+2. Navigate to the folder where this file is located
+3. Run "sass site.scss site.css"
+*/
+
+@import 'partials/_contact-us.scss';
+@import 'partials/_page.scss';
+@import 'partials/_core.scss';
+@import 'partials/_footer.scss';
+@import 'partials/_globals.scss';
+@import 'partials/_header.scss';
